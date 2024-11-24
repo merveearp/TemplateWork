@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ViewData["Title"] - TemplateWork</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Topic Listing Bootstrap 5 Template</title>
+
+    @await Html.PartialAsync("_CssPartial")
+
+    </head>
+    
+    <body id="top">
+
+      @RenderBody()
+    @await Html.PartialAsync("_FooterPartial")
+    @await Html.PartialAsync("_ScriptsPartial")
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+
+    </body>
+</html>
